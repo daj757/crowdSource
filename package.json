@@ -1,7 +1,8 @@
 {
   "name": "crowdsource",
   "version": "1.0.0",
-  "description": "A decentralized crowd funding campaign site built for the Ethereum platform.",
+  "description":
+    "A decentralized crowd funding campaign site built for the Ethereum platform.",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -21,7 +22,7 @@
     "fs-extra": "^5.0.0",
     "ganache-cli": "^6.0.3",
     "mocha": "^5.0.1",
-    "next": "4.1.4",
+    "next": "^4.1.4",
     "next-routes": "^1.3.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

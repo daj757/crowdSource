@@ -1,4 +1,4 @@
 node_modules
-ethereum/compile.js
-ethereum/deploy.js
-ethereum/address
+compile.js
+deploy.js
+address
