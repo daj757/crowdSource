@@ -77,7 +77,7 @@ contract CrowdSource {
         
     }
 
-    function getSummary() public view returns(uint, uint, uint, uint, address){
+    function getSummary() public view returns(uint, uint, uint, uint, address) {
         return(
             mininumContribution,
             this.balance,
@@ -87,7 +87,7 @@ contract CrowdSource {
         );
     }
 
-    function getRequestCount() public view returns uint {
+    function getRequestCount() public view returns(uint) {
         return requests.length;
     }
     

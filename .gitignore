@@ -2,3 +2,4 @@ node_modules
 compile.js
 deploy.js
 address
+ethereum/build/
