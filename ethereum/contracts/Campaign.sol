@@ -45,7 +45,8 @@ contract CrowdSource {
     }
     
     function createRequest(string description, uint value, address recipient)
-        public restricted {
+        public restricted 
+        {
          require(approvers[msg.sender]);
         Request memory newRequest = Request({
             description: description,
