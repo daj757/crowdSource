@@ -50,9 +50,6 @@ var _routes = require("../routes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = "/Users/DJ/Dropbox/PREWORK_DJ/Code/crowdSource/components/contributeForm.js";
-
-
 var ContributeForm = function (_Component) {
   (0, _inherits3.default)(ContributeForm, _Component);
 
@@ -131,44 +128,18 @@ var ContributeForm = function (_Component) {
     value: function render() {
       var _this3 = this;
 
-      return _react2.default.createElement(_semanticUiReact.Form, { onSubmit: this.onSubmit, error: !!this.state.errMsg, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        }
-      }, _react2.default.createElement(_semanticUiReact.Form.Field, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 41
-        }
-      }, _react2.default.createElement("label", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 42
-        }
-      }, "Amount to contribute"), _react2.default.createElement(_semanticUiReact.Input, {
+      return _react2.default.createElement(_semanticUiReact.Form, { onSubmit: this.onSubmit, error: !!this.state.errMsg }, _react2.default.createElement(_semanticUiReact.Form.Field, null, _react2.default.createElement("label", null, "Amount to contribute"), _react2.default.createElement(_semanticUiReact.Input, {
         label: "ether",
         labelPosition: "right",
         value: this.state.contribution,
         onChange: function onChange(event) {
           _this3.setState({ contribution: event.target.value });
           _this3.validate(event.target.value);
-        },
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
         }
-      })), _react2.default.createElement(_semanticUiReact.Message, { error: true, header: "Opps!", content: this.state.errMsg, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 53
-        }
-      }), _react2.default.createElement(_semanticUiReact.Button, {
+      })), _react2.default.createElement(_semanticUiReact.Message, { error: true, header: "Opps!", content: this.state.errMsg }), _react2.default.createElement(_semanticUiReact.Button, {
         disabled: this.state.disabled,
         loading: this.state.loading,
-        primary: true,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 54
-        }
+        primary: true
       }, "Contribute!"));
     }
   }]);
@@ -177,4 +148,3 @@ var ContributeForm = function (_Component) {
 }(_react.Component);
 
 exports.default = ContributeForm;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvY29udHJpYnV0ZUZvcm0uanMiXSwibmFtZXMiOlsiUmVhY3QiLCJDb21wb25lbnQiLCJGb3JtIiwiSW5wdXQiLCJNZXNzYWdlIiwiQnV0dG9uIiwiQ2FtcGFpZ24iLCJ3ZWIzIiwiUm91dGVyIiwiQ29udHJpYnV0ZUZvcm0iLCJzdGF0ZSIsImVyck1zZyIsImNvbnRyaWJ1dGlvbiIsImRpc2FibGVkIiwibG9hZGluZyIsInZhbGlkYXRlIiwicGF0dGVybiIsInRlc3QiLCJpbnB1dCIsInNldFN0YXRlIiwib25TdWJtaXQiLCJldmVudCIsInByZXZlbnREZWZhdWx0IiwiY2FtcGFpZ24iLCJwcm9wcyIsImFkZHJlc3MiLCJldGgiLCJnZXRBY2NvdW50cyIsImFjY291bnRzIiwibWV0aG9kcyIsImNvbnRyaWJ1dGUiLCJzZW5kIiwiZnJvbSIsInZhbHVlIiwidXRpbHMiLCJ0b1dlaSIsInJlcGxhY2VSb3V0ZSIsIm1lc3NhZ2UiLCJ0YXJnZXQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPLEFBQVM7Ozs7QUFDaEIsQUFBUyxBQUFNLEFBQU8sQUFBUzs7QUFDL0IsQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBVTs7OztBQUNqQixBQUFTLEFBQWM7Ozs7Ozs7SUFFakIsQTs7Ozs7Ozs7Ozs7Ozs7OzROLEFBQ0o7Y0FBUSxBQUNFLEFBQ1I7b0JBRk0sQUFFUSxBQUNkO2dCQUhNLEFBR0ksQUFDVjtlLEFBSk0sQUFJRztBQUpILEFBQ04sYSxBQU1GLFdBQVcsaUJBQVMsQUFDbEI7VUFBTSxVQUFOLEFBQWdCLEFBQ2hCO2NBQUEsQUFBUSxLQUFSLEFBQWEsU0FDVCxNQUFBLEFBQUssU0FBUyxFQUFFLFVBRHBCLEFBQ0ksQUFBYyxBQUFZLFdBQzFCLE1BQUEsQUFBSyxTQUFTLEVBQUUsVUFGcEIsQUFFSSxBQUFjLEFBQVksQUFDL0I7QSxhQUVELEE7MkZBQVcsaUJBQUEsQUFBTSxPQUFOO3NCQUFBO3NFQUFBO29CQUFBOzZDQUFBO21CQUNUO3NCQUFBLEFBQU0sQUFDTjtzQkFBQSxBQUFLLFNBQVMsRUFBRSxTQUFGLEFBQVcsTUFBTSxRQUEvQixBQUFjLEFBQXlCLEFBQ2pDO0FBSEcsMkJBR1Esd0JBQVMsTUFBQSxBQUFLLE1BSHRCLEFBR1EsQUFBb0I7Z0NBSDVCO2dDQUFBO3VCQUtnQixjQUFBLEFBQUssSUFMckIsQUFLZ0IsQUFBUzs7bUJBQTFCO0FBTEMsb0NBQUE7Z0NBQUE7Z0NBTUQsQUFBUyxRQUFULEFBQWlCLGFBQWpCLEFBQThCO3dCQUM1QixTQURpQyxBQUNqQyxBQUFTLEFBQ2Y7eUJBQU8sY0FBQSxBQUFLLE1BQUwsQUFBVyxNQUFNLE1BQUEsQUFBSyxNQUF0QixBQUE0QixjQVI5QixBQU1ELEFBQW1DLEFBRWhDLEFBQTBDO0FBRlYsQUFDdkMsaUJBREk7O21CQUlOOytCQUFBLEFBQU8sNkJBQTJCLE1BQUEsQUFBSyxNQVZoQyxBQVVQLEFBQTZDO2dDQVZ0QztBQUFBOzttQkFBQTtnQ0FBQTtnREFZUDs7c0JBQUEsQUFBSyxTQUFTLEVBQUUsUUFBUSxZQVpqQixBQVlQLEFBQWMsQUFBYzs7bUJBRTlCO3NCQUFBLEFBQUssU0FBUyxFQUFFLFNBQUYsQUFBVyxPQUFPLGNBZHZCLEFBY1QsQUFBYyxBQUFnQzs7bUJBZHJDO21CQUFBO2dDQUFBOztBQUFBO2lDQUFBO0E7Ozs7Ozs7Ozs7NkJBZ0JGO21CQUNQOzs2QkFDRSxBQUFDLHVDQUFLLFVBQVUsS0FBaEIsQUFBcUIsVUFBVSxPQUFPLENBQUMsQ0FBQyxLQUFBLEFBQUssTUFBN0MsQUFBbUQ7b0JBQW5EO3NCQUFBLEFBQ0U7QUFERjtPQUFBLGtCQUNHLGNBQUQsc0JBQUEsQUFBTTs7b0JBQU47c0JBQUEsQUFDRTtBQURGO0FBQUEseUJBQ0UsY0FBQTs7b0JBQUE7c0JBQUE7QUFBQTtBQUFBLFNBREYsQUFDRSxBQUNBLHlDQUFBLEFBQUM7ZUFBRCxBQUNRLEFBQ047dUJBRkYsQUFFZ0IsQUFDZDtlQUFPLEtBQUEsQUFBSyxNQUhkLEFBR29CLEFBQ2xCO2tCQUFVLHlCQUFTLEFBQ2pCO2lCQUFBLEFBQUssU0FBUyxFQUFFLGNBQWMsTUFBQSxBQUFNLE9BQXBDLEFBQWMsQUFBNkIsQUFDM0M7aUJBQUEsQUFBSyxTQUFTLE1BQUEsQUFBTSxPQUFwQixBQUEyQixBQUM1QjtBQVBIOztvQkFBQTtzQkFISixBQUNFLEFBRUUsQUFVRjtBQVZFO0FBQ0UsMkJBU0osQUFBQywwQ0FBUSxPQUFULE1BQWUsUUFBZixBQUFzQixTQUFRLFNBQVMsS0FBQSxBQUFLLE1BQTVDLEFBQWtEO29CQUFsRDtzQkFiRixBQWFFLEFBQ0E7QUFEQTswQkFDQSxBQUFDO2tCQUNXLEtBQUEsQUFBSyxNQURqQixBQUN1QixBQUNyQjtpQkFBUyxLQUFBLEFBQUssTUFGaEIsQUFFc0IsQUFDcEI7aUJBSEY7O29CQUFBO3NCQUFBO0FBQUE7QUFDRSxTQWhCTixBQUNFLEFBY0UsQUFTTDs7Ozs7QUF4RDBCLEEsQUEyRDdCOztrQkFBQSxBQUFlIiwiZmlsZSI6ImNvbnRyaWJ1dGVGb3JtLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9ESi9Ecm9wYm94L1BSRVdPUktfREovQ29kZS9jcm93ZFNvdXJjZSJ9
