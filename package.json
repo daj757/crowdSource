@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description":
     "A decentralized crowd funding campaign site built for the Ethereum platform.",
-  "main": "/pages/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "mocha",
     "dev": "next",
