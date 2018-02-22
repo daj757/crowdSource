@@ -7,8 +7,8 @@
   "scripts": {
     "test": "mocha",
     "dev": "next",
-    "start": "micro",
-    "build": "async-to-gen input.js > output.js"
+    "start": "next start",
+    "build": "next build"
   },
   "repository": {
     "type": "git",
