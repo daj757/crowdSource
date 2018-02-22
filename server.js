@@ -2,7 +2,7 @@ const { createServer } = require("http");
 const next = require("next");
 
 const app = next({
-  dev: process.env.node === "production"
+  dev: process.env.node !== "production"
 });
 
 const routes = require("./routes");
