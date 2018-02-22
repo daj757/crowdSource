@@ -24,7 +24,7 @@ class CampaignNew extends Component {
         Router.pushRoute('/')
         }
         catch(err){
-            this.setState({errorMsg: err.message})
+            this.setState({errorMsg:err.message})
         }
         this.setState({loading: false})
 

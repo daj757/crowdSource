@@ -12,6 +12,10 @@ var _asyncToGenerator2 = require("babel-runtime/helpers/asyncToGenerator");
 
 var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
+var _defineProperty2 = require("babel-runtime/helpers/defineProperty");
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
 var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");
 
 var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -50,9 +54,6 @@ var _routes = require("../routes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = "/Users/DJ/Dropbox/PREWORK_DJ/Code/crowdSource/pages/index.js?entry";
-
-
 var CampaignIndex = function (_Component) {
   (0, _inherits3.default)(CampaignIndex, _Component);
 
@@ -68,74 +69,39 @@ var CampaignIndex = function (_Component) {
       var items = this.props.campaigns.map(function (address) {
         return {
           header: address,
-          description: _react2.default.createElement(_routes.Link, { route: "/campaigns/" + address, __source: {
-              fileName: _jsxFileName,
-              lineNumber: 17
-            }
-          }, _react2.default.createElement("a", {
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 17
-            }
-          }, "View campaign")),
+          description: _react2.default.createElement(_routes.Link, { route: "/campaigns/" + address }, _react2.default.createElement("a", null, "View campaign")),
           fluid: true
         };
       });
-      return _react2.default.createElement(_semanticUiReact.Card.Group, { items: items, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        }
-      });
+      return _react2.default.createElement(_semanticUiReact.Card.Group, { items: items });
     }
   }, {
     key: "render",
     value: function render() {
-      return _react2.default.createElement(_layout2.default, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 26
+      return _react2.default.createElement(_layout2.default, null, _react2.default.createElement(_semanticUiReact.Container, { text: true }, _react2.default.createElement(_semanticUiReact.Header, {
+        as: "h1",
+        content: "Crowd Coin",
+        style: (0, _defineProperty3.default)({
+          fontSize: "4em",
+          fontWeight: "normal",
+          marginBottom: 0,
+          marginTop: ".99em"
+        }, "marginBottom", ".1em")
+      }), _react2.default.createElement(_semanticUiReact.Header, {
+        as: "h2",
+        content: "A crowd funding site with complete transparecny. Built on the ethereum platform. To test out on the Rinkeby test network have MetaMask installed in your browser.",
+        style: {
+          fontSize: "1.7em",
+          fontWeight: "normal",
+          marginTop: ".5em",
+          marginBottom: "5em"
         }
-      }, _react2.default.createElement("div", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 27
-        }
-      }, _react2.default.createElement("h2", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 28
-        }
-      }, "Open Campaigns"), _react2.default.createElement(_routes.Link, { route: "/campaigns/new", __source: {
-          fileName: _jsxFileName,
-          lineNumber: 29
-        }
-      }, _react2.default.createElement("a", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        }
-      }, _react2.default.createElement(_semanticUiReact.Button, { floated: "right", animated: true, primary: true, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 31
-        }
-      }, _react2.default.createElement(_semanticUiReact.Button.Content, { visible: true, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 32
-        }
-      }, "Create Campaign"), _react2.default.createElement(_semanticUiReact.Button.Content, { hidden: true, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 33
-        }
-      }, _react2.default.createElement(_semanticUiReact.Icon, { name: "add circle", __source: {
-          fileName: _jsxFileName,
-          lineNumber: 34
-        }
-      }))))), this.renderCampaigns()));
+      })), _react2.default.createElement("div", null, _react2.default.createElement("h2", null, "Open Campaigns"), _react2.default.createElement(_routes.Link, { route: "/campaigns/new" }, _react2.default.createElement("a", null, _react2.default.createElement(_semanticUiReact.Button, { floated: "right", animated: true, primary: true }, _react2.default.createElement(_semanticUiReact.Button.Content, { visible: true }, "Create Campaign"), _react2.default.createElement(_semanticUiReact.Button.Content, { hidden: true }, _react2.default.createElement(_semanticUiReact.Icon, { name: "add circle" }))))), this.renderCampaigns()));
     }
   }], [{
     key: "getInitialProps",
     value: function () {
-      var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
+      var _ref2 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
         var campaigns;
         return _regenerator2.default.wrap(function _callee$(_context) {
           while (1) {
@@ -157,7 +123,7 @@ var CampaignIndex = function (_Component) {
       }));
 
       function getInitialProps() {
-        return _ref.apply(this, arguments);
+        return _ref2.apply(this, arguments);
       }
 
       return getInitialProps;
@@ -168,4 +134,3 @@ var CampaignIndex = function (_Component) {
 }(_react.Component);
 
 exports.default = CampaignIndex;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiQ29tcG9uZW50IiwiZmFjdG9yeSIsIkNhcmQiLCJCdXR0b24iLCJJY29uIiwiTGF5b3V0IiwiTGluayIsIkNhbXBhaWduSW5kZXgiLCJpdGVtcyIsInByb3BzIiwiY2FtcGFpZ25zIiwibWFwIiwiaGVhZGVyIiwiYWRkcmVzcyIsImRlc2NyaXB0aW9uIiwiZmx1aWQiLCJyZW5kZXJDYW1wYWlnbnMiLCJtZXRob2RzIiwiZ2V0RGVwbG95ZWRDYW1wYWlnbnMiLCJjYWxsIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU8sQUFBYTs7OztBQUNwQixBQUFTLEFBQU0sQUFBUTs7QUFDdkIsQUFBTyxBQUFZOzs7O0FBQ25CLEFBQVMsQUFBWTs7Ozs7OztJQUVmLEE7Ozs7Ozs7Ozs7O3NDQU1jLEFBQ2hCO1VBQU0sYUFBUSxBQUFLLE1BQUwsQUFBVyxVQUFYLEFBQXFCLElBQUksbUJBQVcsQUFDaEQ7O2tCQUFPLEFBQ0csQUFDUjt1Q0FBYSxBQUFDLDhCQUFLLHVCQUFOLEFBQTJCO3dCQUEzQjswQkFBQSxBQUFzQztBQUF0QztXQUFBLGtCQUFzQyxjQUFBOzt3QkFBQTswQkFBQTtBQUFBO0FBQUEsYUFGOUMsQUFFUSxBQUFzQyxBQUNuRDtpQkFIRixBQUFPLEFBR0UsQUFFVjtBQUxRLEFBQ0w7QUFGSixBQUFjLEFBT2QsT0FQYzsyQ0FPUCxBQUFDLHNCQUFELEFBQU0sU0FBTSxPQUFaLEFBQW1CO29CQUFuQjtzQkFBUCxBQUFPLEFBQ1I7QUFEUTtPQUFBOzs7OzZCQUdBLEFBQ1A7NkJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDQTtBQURBO0FBQUEsT0FBQSxrQkFDQSxjQUFBOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSx5QkFDRSxjQUFBOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FERixBQUNFLEFBQ0EsbUNBQUEsQUFBQyw4QkFBSyxPQUFOLEFBQVk7b0JBQVo7c0JBQUEsQUFDQTtBQURBO3lCQUNBLGNBQUE7O29CQUFBO3NCQUFBLEFBQ0E7QUFEQTtBQUFBLHlCQUNBLEFBQUMseUNBQU8sU0FBUixBQUFnQixTQUFRLFVBQXhCLE1BQWlDLFNBQWpDLEFBQTBDO29CQUExQztzQkFBQSxBQUNFO0FBREY7eUJBQ0csY0FBRCx3QkFBQSxBQUFRLFdBQVEsU0FBaEI7b0JBQUE7c0JBQUE7QUFBQTtTQURGLEFBQ0UsQUFDQSxvQ0FBQyxjQUFELHdCQUFBLEFBQVEsV0FBUSxRQUFoQjtvQkFBQTtzQkFBQSxBQUNFO0FBREY7eUJBQ0UsQUFBQyx1Q0FBSyxNQUFOLEFBQVc7b0JBQVg7c0JBUE4sQUFFRSxBQUNBLEFBQ0EsQUFFRSxBQUNFLEFBS0g7QUFMRzttQkFUUixBQUNFLEFBQ0EsQUFZRyxBQUFLLEFBSVg7Ozs7Ozs7Ozs7Ozt1QkFsQ3lCLGtCQUFBLEFBQVEsUUFBUixBQUFnQix1QkFBdUIsQSxBQUF2Qzs7bUJBQWxCO0E7aURBQ0MsRUFBRSxXLEFBQUY7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFIaUIsQSxBQXVDNUI7O2tCQUFBLEFBQWUiLCJmaWxlIjoiaW5kZXguanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL0RKL0Ryb3Bib3gvUFJFV09SS19ESi9Db2RlL2Nyb3dkU291cmNlIn0=

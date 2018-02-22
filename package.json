@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description":
     "A decentralized crowd funding campaign site built for the Ethereum platform.",
-  "main": "index.js",
+  "main": "/pages/index.js",
   "scripts": {
     "test": "mocha",
-    "dev": "node server.js"
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "semantic-ui-react": "^0.78.2",
     "solc": "^0.4.20",
     "truffle-hdwallet-provider": "^0.0.3",
-    "web3": "^1.0.0-beta.30"
+    "web3": "^1.0.0-beta.30",
+    "micro": "latest"
   }
 }
