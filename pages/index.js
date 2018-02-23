@@ -6,7 +6,8 @@ import {
   Icon,
   Container,
   Header,
-  Responsive
+  Responsive,
+  Image
 } from "semantic-ui-react";
 import Layout from "../components/layout";
 import { Link } from "../routes";
@@ -38,7 +39,6 @@ class CampaignIndex extends Component {
         <Container text>
           <Header
             as="h1"
-            content="Crowd Coin"
             style={{
               fontSize: "4em",
               fontWeight: "normal",
@@ -46,7 +46,9 @@ class CampaignIndex extends Component {
               marginTop: ".99em",
               marginBottom: ".1em"
             }}
-          />
+          >
+            Crowd Coin <Image size="large" src="../static/crypto.png" />
+          </Header>
           <Header
             as="h2"
             content="A crowd funding site with complete transparecny. Built on the ethereum platform.
