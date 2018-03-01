@@ -51,8 +51,8 @@ class CampaignIndex extends Component {
           </Header>
           <Header
             as="h2"
-            content="A crowd funding site with complete transparecny. Built on the ethereum platform.
-            To test out on the Rinkeby test network have MetaMask installed in your browser."
+            content="A crowd funding site with complete transparency. Built on the ethereum platform.
+            To test out on the Rinkeby test network have MetaMask installed on your browser."
             style={{
               fontSize: "1.7em",
               fontWeight: "normal",
